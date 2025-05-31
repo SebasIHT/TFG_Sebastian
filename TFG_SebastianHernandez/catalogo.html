@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper-bundle @9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="catalogo.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">LOGO</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu"><img src="imagenes/menu.png" class="menu-icono" alt="Menú"></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Soporte</a></li>
+                    <li><a href="#">Perfil</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="imagenes/carrito.png" id="imagen-carrito" alt="Carrito">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Juego</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-4">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="swiper mySwiper-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="header-info">
+                            <div class="header-txt">
+                                <h1>Elden Ring</h1>
+                                <div class="precios">
+                                    <p class="precio-1">69.99€</p>
+                                    <p class="precio-2">39.99€</p>
+                                </div>
+                                <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar Carrito</a>
+                            </div>
+                            <div class="header-img">
+                                <img src="imagenes/elden.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="header-info">
+                            <div class="header-txt">
+                                <h1>GTA V</h1>
+                                <div class="precios">
+                                    <p class="precio-1">29.99€</p>
+                                    <p class="precio-2">19.99€</p>
+                                </div>
+                                <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar Carrito</a>
+                            </div>
+                            <div class="header-img">
+                                <img src="imagenes/gtav.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="header-info">
+                            <div class="header-txt">
+                                <h1>CupHead</h1>
+                                <div class="precios">
+                                    <p class="precio-1">29.99€</p>
+                                    <p class="precio-2">9.99€</p>
+                                </div>
+                                <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar Carrito</a>
+                            </div>
+                            <div class="header-img">
+                                <img src="imagenes/cuphead.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <section class="descuentos container" id="lista-1">
+        <h2>Descuentos</h2>
+        <div class="categorias">
+            <div class="categoria">
+                <div class="categoria-1">
+                    <h3>Diablo IV</h3>
+                    <p>Juego de Rol</p>
+                    <div class="precios">
+                        <p class="precio-1">79.99€</p>
+                        <p class="precio">59.99€</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar Carrito</a>
+                </div>
+                <div class="categoria-img">
+                    <img src="imagenes/diablo.png" alt="">
+                </div>
+            </div>
+            <div class="categoria">
+                <div class="categoria-1">
+                    <h3>EAFC 25</h3>
+                    <p>Juego de Deportes</p>
+                    <div class="precios">
+                        <p class="precio-1">59.99€</p>
+                        <p class="precio">29.99€</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar Carrito</a>
+                </div>
+                <div class="categoria-img">
+                    <img src="imagenes/eafc.png" alt="">
+                </div>
+            </div>
+            <div class="categoria">
+                <div class="categoria-1">
+                    <h3>Red Dead Redemption 2</h3>
+                    <p>Juego de Acción</p>
+                    <div class="precios">
+                        <p class="precio-1">29.99€</p>
+                        <p class="precio">9.99€</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar Carrito</a>
+                </div>
+                <div class="categoria-img">
+                    <img src="imagenes/red.webp" alt="">
+                </div>
+            </div>
+            <div class="categoria">
+                <div class="categoria-1">
+                    <h3>Persona 5 Royal</h3>
+                    <p>Juego de Rol</p>
+                    <div class="precios">
+                        <p class="precio-1">49.99€</p>
+                        <p class="precio">30.99€</p>
+                    </div>
+                    <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar Carrito</a>
+                </div>
+                <div class="categoria-img">
+                    <img src="imagenes/persona5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="productos container" id="lista-2">
+        <h2>Juegos Nuevos</h2>
+        <div class="swiper mySwiper-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="juego">
+                        <img src="imagenes/expedition.jpg" alt="">
+                        <div class="juego-txt">
+                            <h3>Expedition 33</h3>
+                            <p>Juego de Rol</p>
+                            <p class="precio">79.99€</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="juego">
+                        <img src="imagenes/just.jpg" alt="">
+                        <div class="juego-txt">
+                            <h3>Just Dance 2025</h3>
+                            <p>Juego de Música</p>
+                            <p class="precio">49.99€</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="9">Agregar Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="juego">
+                        <img src="imagenes/helldivers.jpg" alt="">
+                        <div class="juego-txt">
+                            <h3>HellDivers II</h3>
+                            <p>Juego de Acción</p>
+                            <p class="precio">69.99€</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="10">Agregar Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="juego">
+                        <img src="imagenes/inazuma.jpg" alt="">
+                        <div class="juego-txt">
+                            <h3>Inazuma Eleven: Victory Road</h3>
+                            <p>Juego de Deportes</p>
+                            <p class="precio">74.99€</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="11">Agregar Carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <hr>
+    <section class="productos container" id="lista-3">
+        <h2>Juegos Populares</h2>
+        <div class="swiper mySwiper-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="juego">
+                        <img src="imagenes/mariokart.jpg" alt="">
+                        <div class="juego-txt">
+                            <h3>Mario Kart 8 Deluxe</h3>
+                            <p>Juego de Carreras</p>
+                            <p class="precio">59.99€</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="12">Agregar Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="juego">
+                        <img src="imagenes/smash.jpg" alt="">
+                        <div class="juego-txt">
+                            <h3>Super Smash Bros Ultimate</h3>
+                            <p>Juego de Lucha</p>
+                            <p class="precio">49.99€</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="13">Agregar Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="juego">
+                        <img src="imagenes/pokemon.jpg" alt="">
+                        <div class="juego-txt">
+                            <h3>Pokemon Escarlata</h3>
+                            <p>Juego de Rol</p>
+                            <p class="precio">69.99€</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="14">Agregar Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="juego">
+                        <img src="imagenes/zelda.jpg" alt="">
+                        <div class="juego-txt">
+                            <h3>Zelda: Tears of the Kingdom</h3>
+                            <p>Juego de Aventura</p>
+                            <p class="precio">54.99€</p>
+                            <a href="#" class="agregar-carrito btn-3" data-id="15">Agregar Carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper-bundle @9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

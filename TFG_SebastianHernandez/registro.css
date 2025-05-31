@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #004691;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+.preferences {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.preferences label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #0097b7;
+}
+
+.register-link {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.register-link a {
+    color: #00b4d8;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 25px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .login-btn {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,268 @@
+:root {
+            --primary-color: #01e6ff;
+            --bg-color: rgba(208, 163, 215, 0.992);
+            --footer-bg: #1e459e;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: #000;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        .menu-icono {
+            width: 60px;
+            height: auto;
+            vertical-align: middle;
+            margin-top: -4px;
+            transition: transform 0.2s ease;
+            border: none;
+        }
+
+        .menu .navbar ul li a.active,
+        .menu .navbar ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .menu-icono[src="imagenes/logo.png"]:not([src=""]) {
+            border: 1px solid red;
+        }
+
+        .menu .navbar ul li {
+            float: left;
+        }
+
+        .menu .navbar ul li a {
+            font-size: 18px;
+            padding: 20px;
+            color: #ffffff;
+            font-weight: 600;
+            display: block;
+        }
+
+        .menu .navbar ul li a:hover,
+        .menu .navbar ul li a.active {
+            color: var(--primary-color);
+        }
+
+        #menu {
+            display: none;
+        }
+
+        .menu label {
+            cursor: pointer;
+            display: none;
+        }
+
+        .cart-icon {
+            width: 60px;
+            vertical-align: middle;
+            margin-top: -4px;
+            transition: transform 0.2s ease;
+        }
+
+        .cart-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .header-content {
+            text-align: center;
+            padding: 8rem 0;
+            color: #fff;
+        }
+
+        .header-txt h1 {
+            font-size: 60px;
+            line-height: 1.3;
+            margin-bottom: 25px;
+        }
+
+        .header-txt span {
+            color: var(--primary-color);
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .btn-1 {
+            display: inline-block;
+            padding: 11px 35px;
+            border: 2px solid var(--primary-color);
+            border-radius: 25px;
+            font-size: 17px;
+            color: #000;
+            background-color: var(--primary-color);
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-1:hover {
+            background-color: transparent;
+            color: #fff;
+        }
+
+        .heading-1 {
+            font-size: 3rem;
+            text-align: center;
+            margin: 7rem 0 2rem;
+            color: #000;
+        }
+
+        .contact-faq-container {
+            display: flex;
+            gap: 4rem;
+            padding: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-section,
+        .faq-section {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #000;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            font-size: 1.4rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .contact-section textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-button {
+            background-color: var(--primary-color);
+            color: #000;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            border-radius: 2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #00cfd6;
+        }
+
+        .faq-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #000;
+        }
+
+        .faq-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .faq-section ul li {
+            margin-bottom: 1.2rem;
+        }
+
+        .faq-section ul li a {
+            color: #000;
+            font-size: 1.6rem;
+            text-decoration: none;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .faq-section ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .contact-faq-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .contact-section,
+            .faq-section {
+                width: 100%;
+            }
+
+            .menu label {
+                display: block;
+            }
+
+            .menu .navbar {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.9);
+                padding: 1rem;
+                transform: translateY(-200px);
+                opacity: 0;
+                transition: all 0.3s ease;
+                pointer-events: none;
+            }
+
+            .menu #menu:checked ~ .navbar {
+                transform: translateY(0);
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+            .menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu ul li {
+                float: none;
+                margin: 1rem 0;
+            }
+        }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Soporte</title>
+    <link rel="stylesheet" href="soporte.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css ">
+</head>
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Logo</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="imagenes/logo.png" class="menu-icono" alt="Menú">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                    <li><img src="imagenes/carrito.png" alt="Carrito" class="cart-icon"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="support-section container">
+        <h2 class="heading-1">SOPORTE</h2>
+
+        <div class="contact-faq-container">
+            <div class="contact-section">
+                <h2>Contacto</h2>
+                <form id="contact-form" action="formularioEnviado.php" method="POST">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="problema" placeholder="Problema en cuestión" required>
+                    <textarea name="motivo" placeholder="Escribe aquí..." required></textarea>
+                    <button type="submit" class="submit-button">Enviar</button>
+                </form>
+            </div>
+
+            <div class="faq-section">
+                <h2>Preguntas Frecuentes</h2>
+                <ul>
+                    <li>
+                        <a href="https://es.clear.sale/blog/5-maneras-de-crear-una-mejor-experiencia-de-compra-en-linea" target="_blank" rel="noopener noreferrer">
+                            ¿Cómo hacer la compra exitosa?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://help.hotmart.com/es/article/360061973392/-como-solicitar-el-reembolso-de-mi-compra- " target="_blank" rel="noopener noreferrer">
+                            ¿Cómo pedir un reembolso?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://support.microsoft.com/es-es/account-billing/restablecer-una-contrase%C3%B1a-olvidada-de-una-cuenta-de-microsoft-eff4f067-5042-c1a3-fe72-b04d60556c37 " target="_blank" rel="noopener noreferrer">
+                            ¿Cómo recuperar la contraseña?
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.incibe.es/ciudadania/tematicas/contrasenas-seguras/autenticacion-de-dos-factores " target="_blank" rel="noopener noreferrer">
+                            Autenticación de dos pasos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
